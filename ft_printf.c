@@ -6,7 +6,7 @@
 /*   By: yaben-sa <yaben-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 13:55:31 by yaben-sa          #+#    #+#             */
-/*   Updated: 2025/01/28 13:55:36 by yaben-sa         ###   ########.fr       */
+/*   Updated: 2025/01/30 14:41:11 by yaben-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(const char *format, ...)
 	int		count;
 	int		temp;
 
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	i = 0;
 	count = 0;

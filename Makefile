@@ -6,13 +6,19 @@
 #    By: yaben-sa <yaben-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/28 13:58:59 by yaben-sa          #+#    #+#              #
-#    Updated: 2025/01/28 13:59:02 by yaben-sa         ###   ########.fr        #
+#    Updated: 2025/01/30 14:54:59 by yaben-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libftprintf.a
 CC		= cc
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -MD -MP
+
+DEPS = $(OBJ:.o=.d)
+
+.DEFAULT_GOAL = all
+
+-include $(DEPS)
 
 SRC		= ft_printf.c \
 		  ft_print_conversions.c \
