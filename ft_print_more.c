@@ -6,7 +6,7 @@
 /*   By: yaben-sa <yaben-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 14:03:54 by yaben-sa          #+#    #+#             */
-/*   Updated: 2025/01/28 14:33:33 by yaben-sa         ###   ########.fr       */
+/*   Updated: 2025/01/31 14:17:04 by yaben-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,6 @@ int	ft_print_unsigned(unsigned int n)
 	return (ft_put_unsigned(n));
 }
 
-/*
-** Prints a hexadecimal (base 16) number, in uppercase if uppercase=1,
-** otherwise in lowercase.
-*/
 static int	ft_puthex(unsigned long nbr, int uppercase)
 {
 	char	c;

@@ -6,19 +6,17 @@
 /*   By: yaben-sa <yaben-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 13:56:26 by yaben-sa          #+#    #+#             */
-/*   Updated: 2025/01/28 13:56:33 by yaben-sa         ###   ########.fr       */
+/*   Updated: 2025/01/31 14:19:32 by yaben-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/* Prints a single character. */
 int	ft_print_char(char c)
 {
 	return (write(1, &c, 1));
 }
 
-/* Prints a string (null-terminated). */
 int	ft_print_str(const char *s)
 {
 	int	i;
@@ -31,7 +29,6 @@ int	ft_print_str(const char *s)
 	return (write(1, s, i));
 }
 
-/* Prints a signed decimal integer. */
 static int	ft_putnbr_rec(long n)
 {
 	char	c;
