@@ -6,7 +6,7 @@
 #    By: yaben-sa <yaben-sa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/28 13:58:59 by yaben-sa          #+#    #+#              #
-#    Updated: 2025/01/30 14:54:59 by yaben-sa         ###   ########.fr        #
+#    Updated: 2025/01/31 13:48:40 by yaben-sa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(DEPS)
 
 fclean: clean
 	rm -f $(NAME)
